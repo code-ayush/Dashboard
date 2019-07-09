@@ -1,0 +1,717 @@
+<html>
+  <head>
+    <title>DashBoard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawsome icons css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- css sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- side bar -->
+      <div id="menu">
+        <div class="nav-bar" >
+          <br />
+          <h1>
+            GeekyAnts
+          </h1>
+          <br />
+          <div class="text_main">Main</div>
+          <ul>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-home" aria-hidden="true"></i> &nbspDashboard
+                </div>
+                <div style="margin-left: auto" class="notif">
+                  <div class="pur">2</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  &nbspCalendar
+                </div>
+                
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-envelope" aria-hidden="true"></i> &nbspEmail
+                </div>
+                <div style="margin-left: auto">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-cube" aria-hidden="true"></i> &nbspUI Elements
+                </div>
+                <div style="margin-left: auto" class="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                  &nbspForms
+                </div>
+                <div style="margin-left: auto" class="notif">
+                  <div class="green">9</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-pie-chart" aria-hidden="true"></i> &nbspCharts
+                </div>
+                <div style="margin-left: auto">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-table" aria-hidden="true"></i> &nbspTables
+                </div>
+                <div style="margin-left: auto">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-smile-o" aria-hidden="true"></i> &nbspIcons
+                </div>
+                <div style="margin-left: auto">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="side_link">
+                <div>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> &nbspMaps
+                </div>
+                <div style="margin-left: auto" class="notif">
+                  <div class="red">2</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content_panel" id="content">
+        <!-- header menu -->
+        <div class="header_menu">
+          <div>
+            <a herf="#" onclick="hideunhide()"><i class="fa fa-bars menu_ico"></i></button>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Create
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Tech</a>
+                <a href="#">Management</a>
+                <a href="#">Social</a>
+              </div>
+            </div>
+          </div>
+          <div style="margin-left: auto;">
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search" />
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn" style="background: inherit;">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                &nbsp;
+                English
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;&nbsp;English</a
+                >
+                <a href="#"
+                  ><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;&nbsp;French</a
+                >
+                <a href="#"
+                  ><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;&nbsp;Espanol</a
+                >
+                <a href="#"
+                  ><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;&nbsp;German</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="#" class="box_color"
+              ><i class="fa fa-square-o" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div>
+            <a href="#" class="box_color"
+              ><i class="fa fa-bell-o" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div>
+            <a href="#"> <img src="img/log.png" class="img_head"/></a>
+          </div>
+        </div>
+
+        <!--card pannel for status card -->
+        <div class="card_layout">
+          <div>
+            <h2>Dashboard</h2>
+            <div style="font-size: 13px;">Welcome to GeekyAnts Dashboard</div>
+          </div>
+          <div style="margin-left: auto;">
+            <button class="button">
+              <i class="fa fa-cog" aria-hidden="true"></i>&nbsp&nbsp Settings
+            </button>
+          </div>
+        </div>
+
+        <!-- status card view -->
+        <div class="cardflex">
+          <div>
+            <div class="card-top">
+              <div>
+                <div class="backdiv">
+                  <i
+                    class="fa fa-home"
+                    style="
+  font-size: 30px;"
+                  ></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div>ORDERS</div>
+                <div><h5>1,685</h5></div>
+              </div>
+
+              <div style="margin-left: auto;">
+                <div class="arrow-wrap">
+                  <div class="green">
+                    &nbsp;&nbsp;&nbsp;&nbsp; +12%
+                  </div>
+                </div>
+                <div class="card_cont_l">
+                  <div class="green">
+                    <i class="fa fa-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="card-bottom">
+                <div>Since last month</div>
+                <div style="margin-left: auto;">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-top">
+              <div>
+                <div class="backdiv">
+                  <i
+                    class="fa fa-sticky-note-o"
+                    style="
+          font-size: 30px;"
+                  ></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div>REVENUE</div>
+                <div>
+                  <h5>5,685</h5>
+                </div>
+              </div>
+
+              <div style="margin-left: auto;">
+                <div class="arrow-wrap">
+                  <div class="red">
+                    &nbsp;&nbsp;&nbsp;&nbsp; -28%
+                  </div>
+                </div>
+                <div class="card_cont_l">
+                  <div class="red">
+                    <i class="fa fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="card-bottom">
+                <div>Since last month</div>
+                <div style="margin-left: auto;">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="card-top">
+              <div>
+                <div class="backdiv">
+                  <i
+                    class="fa fa-pencil-square-o"
+                    style="
+          font-size: 30px;"
+                  ></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div>AVERAGE</div>
+                <div>
+                  <h5>15.8</h5>
+                </div>
+              </div>
+
+              <div style="margin-left: auto;">
+                <div class="arrow-wrap">
+                  <div class="blue">
+                    &nbsp;&nbsp;&nbsp;&nbsp; +00%
+                  </div>
+                </div>
+                <div class="card_cont_l">
+                  <div class="green">
+                    <i class="fa fa-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="card-bottom">
+                <div>Since last month</div>
+                <div style="margin-left: auto;">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="card-top">
+              <div>
+                <div class="backdiv">
+                  <i
+                    class="fa fa-archive"
+                    style="
+          font-size: 30px;"
+                  ></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div>PRODUCT</div>
+                <div>
+                  <h5>8735</h5>
+                </div>
+              </div>
+
+              <div style="margin-left: auto;">
+                <div class="arrow-wrap">
+                  <div class="yellow">
+                    &nbsp;&nbsp;&nbsp;&nbsp; +84%
+                  </div>
+                </div>
+                <div class="card_cont_l">
+                  <div class="green">
+                    <i class="fa fa-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="card-bottom">
+                <div>Since last month</div>
+                <div style="margin-left: auto;">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="last_division">
+          <div style="flex: 1;">
+            <h2>Latest Trasactions</h2>
+            <table>
+              <tr class="title">
+                <td>(#) id</td>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td>Status</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Kuldeep
+                  </div>
+                </td>
+
+                <td>11/3/2019</td>
+
+                <td>$5000</td>
+                <td><span class="delivered">Delivered</span></td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Samuya
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Aashis
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="delivered">Delivered</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Lavi
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="cancle">Cancle</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Sankalp
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="delivered">Delivered</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#141455</td>
+                <td>
+                  <div class="content">
+                    <img src="img/log.png" class="img_head" /> &nbsp;&nbsp;Rocky
+                  </div>
+                </td>
+              
+                <td>11/3/2019</td>
+              
+                <td>$5000</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+                <td>
+                  <button class="button">Edit</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 350px; overflow: hidden;">
+            <h2>Chat</h2>
+            <div class="chat_flex main">
+              <div class="chat_flex msg">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back ptext">
+                  <div><h3>Kuldeep</h3></div>
+                  <div>What your name?</div>
+                </div>
+              </div>
+              <div class="chat_flex msg sender">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back sender">
+                  <div><h3>Kuldeep</h3></div>
+                  <div>u dont need to know me<br>bye</div>
+                </div>
+              </div>
+              <div class="chat_flex msg">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back ptext">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>I have a businss for you</div>
+                </div>
+              </div>
+              <div class="chat_flex msg sender">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back sender">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>i donr need that</div>
+                </div>
+              </div>
+              <div class="chat_flex msg">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back ptext">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>I have a businss for you</div>
+                </div>
+              </div>
+              <div class="chat_flex msg sender">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back sender">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>i donr need that</div>
+                </div>
+              </div>
+              <div class="chat_flex msg">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back ptext">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>I have a businss for you</div>
+                </div>
+              </div>
+              <div class="chat_flex msg sender">
+                <div class="chat_flex dp">
+                  <div><img src="img/log.png" class="img" /></div>
+                  <div>10:00</div>
+                </div>
+                <div class="chat_flex main_block chat_back sender">
+                  <div>
+                    <h3>Kuldeep</h3>
+                  </div>
+                  <div>i donr need that</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat_flex">
+              <div style="flex: 1;"><input type="text" class="msgtxt" placeholder="Enter Your Text" /></div>
+              <div style="margin-left: auto;"><button type="submit" class="msgbtn">Send
+              </button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
